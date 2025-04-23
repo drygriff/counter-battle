@@ -12,8 +12,6 @@ let rightNumber = 0;
 app.post('/update', (req, res) => {
     const clientLeft = req.body.left;
     const clientRight = req.body.right;
-    
-    console.log(`Left: ${leftNumber} | Right: ${rightNumber}`);
 
     if ((typeof clientLeft === "number") && (typeof clientRight === "number")) {    
         leftNumber += clientLeft;
