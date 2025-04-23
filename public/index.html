@@ -1,0 +1,44 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Battle</title>
+
+    <style>
+        body {
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebox {
+            margin: 0;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            user-select: none;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div style="display: flex; height: 100vh; margin: 0; padding: 0;">
+        <div id="leftside" class="sidebox" style="background-color: rgb(110, 110, 255);" onclick="leftButton()">
+            0
+        </div>
+        <div id="rightside" class="sidebox" style="background-color: rgb(255, 110, 110);" onclick="rightButton()">
+            0
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
